@@ -5,7 +5,7 @@ import Footer from '../components/Footer.astro';
 ---
 
 <Layout>
-  <div class="hero">
+  <header class="hero">
     <div class="hero__card">
       <h1>Modern <br />Art Gallery</h1>
       <div class="hero__content">
@@ -17,9 +17,9 @@ import Footer from '../components/Footer.astro';
         <a class="btn btn__next" href="/location/"><span>Our location</span></a>
       </div>
     </div>
-  </div>
+  </header>
 
-  <div class="main">
+  <main class="main">
     <div class="grid">
       <Picture gridPlace="image-1" url="image-grid-1" />
       <div class="flex-content">
@@ -39,7 +39,7 @@ import Footer from '../components/Footer.astro';
         </p>
       </div>
     </div>
-  </div>
+  </main>
 
   <Footer />
 </Layout>
