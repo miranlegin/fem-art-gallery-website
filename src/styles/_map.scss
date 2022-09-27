@@ -1,0 +1,19 @@
+.mapbox-map {
+  width: 100%;
+  height: clamp(34.375rem, 31.3931rem + 12.7226vw, 37.5rem);
+  margin: auto;
+}
+
+.marker {
+  background-image: url(../icon-location.svg);
+  background-size: cover;
+  width: var(--marker-width);
+  height: var(--marker-height);
+  cursor: pointer;
+}
+
+.mapboxgl-popup-content {
+  p {
+    font-size: 1rem;
+  }
+}

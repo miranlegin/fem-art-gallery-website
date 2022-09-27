@@ -1,0 +1,35 @@
+---
+import 'mapbox-gl/dist/mapbox-gl.css';
+---
+
+<div class="mapbox-map" id="map"></div>
+
+<script>
+  import mapboxgl from 'mapbox-gl'; // or "const mapboxgl = require('mapbox-gl');"
+
+  mapboxgl.accessToken =
+    'pk.eyJ1IjoibWlyYW5hZG9yIiwiYSI6ImNsMzQ5eW4zdDAxejkzY21xY3gwM2J5ZHgifQ.PGN6cfbpIRcBDoYUYCK-Xw';
+
+  const lng = '-71.311';
+  const lat = '41.4814';
+
+  const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/miranador/cl8k1ix05004114pept031o8n',
+    center: [lng, lat],
+    zoom: 14.5,
+    dragPan: false,
+  });
+
+  const popup = new mapboxgl.Popup().setHTML(
+    '<p><strong>99 King Street</strong><br />Newport<br>RI 02840<br>United States of America</p>'
+  );
+
+  const customMarker = document.createElement('div');
+  customMarker.classList.add('marker');
+
+  new mapboxgl.Marker(customMarker)
+    .setLngLat([lng, lat])
+    .setPopup(popup)
+    .addTo(map);
+</script>

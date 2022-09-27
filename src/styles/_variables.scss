@@ -1,0 +1,54 @@
+:root {
+  // COLORS
+
+  --primary-400: hsl(24, 56%, 63%);
+
+  --neutral-100: hsl(0, 0%, 100%);
+  --neutral-400: hsl(0, 0%, 27%);
+  --neutral-900: hsl(0, 0%, 8%);
+
+  // FONTS
+  // font body
+  --ff-body: 'Outfit', sans-serif;
+
+  // font title
+  --ff-accent: 'Big Shoulders Display', cursive;
+
+  // font weight
+  --fw-light: 300;
+  --fw-bold: 900;
+
+  // font sizes
+
+  --fs-50: 1rem; // 16
+  --fs-100: 1.125rem; // 18
+  --fs-400: 1.375rem; // 22
+
+  --fs-500: 2.25rem; // 36
+  --fs-550: 3.125rem; // 50
+  --fs-600: 3.75rem; // 60
+  --fs-700: 4.375rem; // 70
+  --fs-900: 6rem; // 96
+
+  --fs-btn: 1.25rem;
+  --lh-btn: 1.2;
+  --ls-btn: 3.63px;
+
+  // map marker dimensions
+
+  --marker-width: 66px;
+  --marker-height: 88px;
+
+  // btn arrow width
+  --btn-arrow: 3.5rem;
+
+  // site max width
+  --site-width: 1110px;
+}
+
+// breakpoints
+$bp-large: 75em;
+$bp-medium: 48em;
+$bp-small: $bp-medium - 0.0625;
+
+$btn-arrow: 3.5rem;
