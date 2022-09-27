@@ -28,7 +28,7 @@ Users should be able to:
 ### Screenshot
 
 Tablet version
-![](/screenshots/tablet.png)
+![](screenshots/tablet.png)
 
 ### Links
 
