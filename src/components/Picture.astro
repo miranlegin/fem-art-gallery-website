@@ -10,11 +10,11 @@ const { url, gridPlace } = Astro.props;
 <picture class={gridPlace}>
   <source
     media="(min-width: 75em)"
-    srcset={`/desktop/${url}.jpg, /desktop/${url}@2x.jpg @2x`}
+    srcset={`/desktop/${url}.jpg, /desktop/${url}@2x.jpg 2x`}
   />
   <source
     media="(min-width: 48em)"
-    srcset={`/tablet/${url}.jpg, /tablet/${url}@2x.jpg @2x`}
+    srcset={`/tablet/${url}.jpg, /tablet/${url}@2x.jpg 2x`}
   />
   <img src={`/mobile/${url}.jpg`} srcset={`/mobile/${url}@2x.jpg 2x`} alt="" />
 </picture>
