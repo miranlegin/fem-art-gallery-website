@@ -16,7 +16,7 @@ body {
   @media (min-width: $bp-medium) {
     background-image: url(/tablet/image-hero.jpg);
     background-position: 0 50%;
-    background-size: 57% 100%;
+    background-size: 57% auto;
     min-height: clamp(43.75rem, 32.6389rem + 23.1481vw, 50rem);
   }
 
